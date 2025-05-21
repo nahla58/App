@@ -1,0 +1,26 @@
+﻿@model App.ApplicationCore.Domain.Conseiller
+
+@{
+    ViewData["Title"] = "DetailsConseiller";
+}
+
+<h1>Détails du Conseiller</h1>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.ConseillerId)</th>
+        <td>@Html.DisplayFor(model => model.ConseillerId)</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Nom)</th>
+        <td>@Html.DisplayFor(model => model.Nom)</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Prenom)</th>
+        <td>@Html.DisplayFor(model => model.Prenom)</td>
+    </tr>
+</table>
+
+<p>
+    <a asp-action="Index">Retour à la liste des clients</a>
+</p>
